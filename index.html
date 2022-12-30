@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro lo-fi timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+
+      <div class="vid">
+        <video autoplay muted loop id="myVideo">
+             <source src=./studygirl.mp4 type="video/mp4">
+         </video>
+      </div>
+    <div id="timer">
+        25:00
+      </div>
+
+        <div class="buttons">
+          <button id="startStop" onclick="startStop()" >Start</button>
+          <button id="reset" onclick="reset()" > Reset </button>
+        </div>
+
+          <div class="timerAndSound">
+            <audio class="song">
+                <source  />
+              </audio>
+          </div>
+     <div class= sounds>
+
+         <audio loop id="lofiSong" src="./lofiSongs.mp3" preload="auto"></audio>
+         <audio id="alarm" src="alarm.mp3" preload="auto"></audio>
+         
+     </div>
+    </div>
+    
+</body>
+</html>
